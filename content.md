@@ -9,7 +9,10 @@ Some constraints:
 - A class should not have more than 3 lessons per day. Online lessons cannot be booked immediately or immediately after a face-to-face lesson. 
 - Only up to 2 lessons can take place in the morning and up to 2 lessons in the afternoon. 
 - Every class has 2 to 4 lessons in a specific classroom.
-- …
+- Can’t assign a classroom that it is already occupied to another class;
+- Assign a classroom to a class according to a total of students of that class;
+- Teachers can choose the schedule that they like;
+- All lessons must start at least at 9am and end at most by 6pm.
 
 According to the constraints described above we will formulate and implement an agent that finds the best solution for class schedules, minimizing the number of days each class must travel to campus and the number of classrooms used. Solutions that have schedules with fewer holes should be valued.
 We will end with a small conclusion, where we will summarize the development of the project, alluding to the difficulties encountered.
