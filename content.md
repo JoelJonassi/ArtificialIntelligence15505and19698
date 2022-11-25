@@ -53,8 +53,8 @@ We will end with a small conclusion, where we will summarize the development of 
 
 - Transition model
     - A schedule can be occupied (A) if it is free;
-    - MD and MH actions changes the position of the agent;
-    - 
+    - A Schedule can be unassign (U) if it is occupied;
+    - (MD) and (MH) actions changes the position of the agent;
 
 - Goal states:
   - Every lessons has a day and the start hour.
@@ -87,6 +87,8 @@ This environment is fully observable ...
 Deterministic...
 
 Sequential ...
+
+Multi-Agent ...
 
 Static...
 
