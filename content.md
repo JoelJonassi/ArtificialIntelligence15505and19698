@@ -21,15 +21,24 @@ We will end with a small conclusion, where we will summarize the development of 
 
 # Goal formulation
 
+Variables: each time slot, that time slot can be assign with teachers, curricular unity and class room.
+
+The domain of each variable: 
+  teachers = {p1, p2, p3, p4, p5, p6, p7, p8}
+  classrooms = {classroom1, classroom2, classroom3, classroom4, classroom5}
+  units curriculars = {unit curricular1, unit curricular2, unit curricular3, unit curricular4}
+
 - Goal: Assign schedule to lessons;
 
+```bash
 - Actions:
     - (A) assign schedule to a classroom;
     - (U) unassign schedule to a classroom;
     - (MD) move to another day;
     - (MH) move to another hour.
+```
 
-- Limitations:
+- Constraints:
 
   - There can not be two lessons in the same classroom at the same time;
   - There can be at most 3 lessons per day;
@@ -37,7 +46,9 @@ We will end with a small conclusion, where we will summarize the development of 
   - Only up to 2 lessons can take place in the morning and up to 2 lessons in the afternoon;
   - There must be 1 or 2 lessons online.
   - Online lessons cannot be booked immediately or immediately after a face-to-face lesson.
+  - Teacher can be assigned one classroom at a time.
 
+```bash
 - Problem formulation:
 
   - State space: Occupied or Free.
@@ -61,6 +72,8 @@ We will end with a small conclusion, where we will summarize the development of 
 
 - Action cost
     - Each step costs 1, and the solution cost is the number of steps to solve the problem.
+```
+
 
 # Agent structure and function
 
@@ -82,17 +95,22 @@ We will end with a small conclusion, where we will summarize the development of 
 
 ## Characteristics of the task environment:
 
-This environment is fully observable ...
+This environment is fully observable - if an agent’s sensors give it access to the complete state of the environment at each
+point in time. The agent need not maintain any internal state to keep track of the world
 
-Deterministic...
+Deterministic - If the next state of the environment is completely determined by the current state and the
+action executed by the agent(s)
 
-Sequential ...
+Sequential - the current decision could affect all future decisions.
 
 Multi-Agent ...
 
-Static...
+Static - the environment does not change while an agent is deliberating
 
-Discrete...
+Discrete - It applies to the state of the environment, to the way time is handled, and to the percepts and actions of
+the agent
+
+
 
 ## Search problem
 
