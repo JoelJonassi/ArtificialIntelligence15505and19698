@@ -21,22 +21,22 @@ We will end with a small conclusion, where we will summarize the development of 
 
 # Goal formulation
 
-Variables: each time slot, that time slot can be assign with teachers, curricular unity and class room.
+Variables: each time slot, that time slot can be assign with teachers, curricular unit and classroom.
 
 The domain of each variable: 
-  teachers = {p1, p2, p3, p4, p5, p6, p7, p8}
-  classrooms = {classroom1, classroom2, classroom3, classroom4, classroom5}
-  units curriculars = {unit curricular1, unit curricular2, unit curricular3, unit curricular4}
+
+  time slot ={09h00-10h00, 10h00-11h00, 11h00-12h00, 12h00-13h00,13h00-14h00, 14h00-15h00, 15h00-16h00, 16h00-17h00, 17h00-18h00, 18h00-19h00, 19h00-20h00, 20h00-21h00, 21h00-22h00, 22h00-23h00}
+
+  days = {monday, tuesday, wednesday, thursday, friday}
+
+  teachers = {t1, t2, t3, t4, t5, t6, t7, t8}
+
+  classrooms = {c1, c2, c3, c4, c5}
+
+  curricular units = {cu1, cu2, cu3, cu4}
 
 - Goal: Assign schedule to lessons;
 
-```bash
-- Actions:
-    - (A) assign schedule to a classroom;
-    - (U) unassign schedule to a classroom;
-    - (MD) move to another day;
-    - (MH) move to another hour.
-```
 
 - Constraints:
 
@@ -48,50 +48,16 @@ The domain of each variable:
   - Online lessons cannot be booked immediately or immediately after a face-to-face lesson.
   - Teacher can be assigned one classroom at a time.
 
-```bash
-- Problem formulation:
-
-  - State space: Occupied or Free.
-
-- Initial State:
-    - All schedules  are free.
-
-- Actions: 
-    - (A) assign schedule to a classroom;
-    - (U) unassign schedule to a classroom;
-    - (MD) move to another day;
-    - (MH) move to another hour.
-
-- Transition model
-    - A schedule can be occupied (A) if it is free;
-    - A Schedule can be unassign (U) if it is occupied;
-    - (MD) and (MH) actions changes the position of the agent;
-
-- Goal states:
-  - Every lessons has a day and the start hour.
-
-- Action cost
-    - Each step costs 1, and the solution cost is the number of steps to solve the problem.
-```
 
 
 # Agent structure and function
 
+
+
+
 ## Attributes of the agent(PEAS):
 
-- Performance:
-  Reduce cost of travels, reduce the number of classrooms used,
 
-- Environment:
-  School, classrooms, students, teachers, staff.
-
-- Actuator:
-  Display of schedules
-  Air conditioner
-  Lessons
-
-- Sensors:
-  ...
 
 ## Characteristics of the task environment:
 
@@ -112,9 +78,23 @@ the agent
 
 
 
-## Search problem
+## Constraint Satisfaction Problem - CSP
 
 ### Pseudo-code
+
+- Performance:
+  Reduce cost of travels, reduce the number of classrooms used,
+
+- Environment:
+  School, classrooms, students, teachers, staff.
+
+- Actuator:
+  Display of schedules
+  Air conditioner
+  Lessons
+
+- Sensors:
+  ...
 
 ## Heuristic
 
@@ -122,6 +102,9 @@ the agent
 
 <<Provide solutions for one or, if possible, several initial states. Perform a critical analysis of the results and identify some future improvements to the agent. Please include a link to the code repository.>>
 
+link Repository: 
+
 # Conclusion
 
 << Insert here a conclusion about the outcomes accomplished, the development process and the tools used. The structure of the report should be adapted according to each project characteristics. Don’t forget to remove these comments (help text)!>>
+
