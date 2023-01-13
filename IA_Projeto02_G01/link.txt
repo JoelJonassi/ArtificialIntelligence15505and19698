@@ -1,0 +1,5 @@
+https://www.youtube.com/watch?v=evY79GoGmWA&ab_channel=LearnCSeasy
+https://www.youtube.com/watch?v=jMt6I2XNLrs&ab_channel=BiztixInnovation
+
+people income cluster dataset
+https://www.kaggle.com/code/ryanholbrook/clustering-with-k-means
