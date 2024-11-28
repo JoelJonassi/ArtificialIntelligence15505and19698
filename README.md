@@ -58,12 +58,3 @@ The intelligent agent developed in this project achieves the following functiona
     ```
 
 ---
-
-## 📁 File Structure
-
-```bash
-ARTIFICIAL_INTELLIGENCE_15505_19698
-├─ .vscode
-├─ content.md
-├─ P01_15505_19698.docx
-└─ README.md
